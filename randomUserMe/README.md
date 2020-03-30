@@ -1,2 +1,5 @@
-ajax-playground-marcellinodemis
-ajax-playground-marcellinodemis created by Marcellino Demis
+# RandomUser
+> Esercizio sul RandomUser
+
+## Created by Marcellino Demis
+
