@@ -1,0 +1,29 @@
+html, body {
+  text-align: center;
+}
+
+#navbar {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.table {
+    width: 100%;
+}
+
+.table, th, td {
+  border: 1px solid black;
+}
+
+th {
+    text-align: center;
+    margin: 0 auto;
+}
+
+label{
+    font-weight: bold;
+}
+
+#select{
+	padding-left:10px;
+}
