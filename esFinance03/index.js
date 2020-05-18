@@ -6,6 +6,7 @@ $(document).ready(function () {
     let _cmbSymbol = $("#cmbSymbols");
     let _txtCerca = $("#txtCerca");
     let cmbRank = $("#cmbRank");
+	let _btnDownload = $("#btnDownload");
     _table = $("#table");
     
     $("#wrapper").hide();
@@ -37,6 +38,10 @@ $(document).ready(function () {
         $(".table").remove();
         $("#wrapper").hide();
     });
+	
+	_btnDownload.on('click', function(){
+		_btnDownload.prop("href", document.getElementById("myChart").toDataURL("image/jpg")); 
+	});
 });
 
 function getGlobalQuotes(symbol) {
@@ -108,14 +113,7 @@ function getGrafico(strRank) {
             let i = 0;
             for (let key in dataSectors[strRank]) {
                 dataChart["data"]["datasets"][0]["data"][i] = dataSectors[strRank][key].substring(0, dataSectors[strRank][key].length - 2);
-                if (dataChart["data"]["datasets"][0]["data"][i] > 0) {
-                    dataChart["data"]["datasets"][0]["backgroundColor"][i] = "rgba(0,255,0,0.5)";
-                    dataChart["data"]["datasets"][0]["borderColor"][i] = "rgb(0,255,0)";
-                }
-                else {
-                    dataChart["data"]["datasets"][0]["backgroundColor"][i] = "rgba(255,0,0,0.5)";
-                    dataChart["data"]["datasets"][0]["borderColor"][i] = "rgb(255,0,0)";
-                }
+                dataChart["data"]["datasets"][0]["backgroundColor"][i] = "rgba(0,0,0)";
                 i++;
             }
             var myChart = new Chart(ctx, dataChart);

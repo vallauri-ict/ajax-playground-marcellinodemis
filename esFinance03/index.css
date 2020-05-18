@@ -1,18 +1,24 @@
 html, body {
-  text-align: center;
+	text-align: center;
+	background-image:url(img/sfondo.jpg); 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
 }
 
 #navbar {
-  width: 90%;
-  margin: 0 auto;
+	width: 90%;
+	margin: 0 auto;
 }
 
 .table {
-    width: 100%;
+    width: 100%
+	
 }
 
 .table, th, td {
-  border: 1px solid black;
+	border: 1px solid black;
+	background-color:rgba(255,255,255,0.5);
 }
 
 th {
@@ -22,6 +28,8 @@ th {
 
 label{
     font-weight: bold;
+	background-color:rgba(255,255,255,0.5);
+	border-radius:10%;
 }
 
 #select{

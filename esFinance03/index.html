@@ -13,29 +13,28 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <label for="lblSymbols">
+    <label for="lblSymbols" id="title">
         Inserisci il nome dell'azienda da cui ricavare dati/grafici
     </label>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
         <div class="collapse navbar-collapse" id="navbarSupportedContent" class="navbar-nav mr-auto">
-			<form class="form-inline my-2 my-lg-0">
-                <input id="txtCerca" type="search">
-            </form>
-			
-            <select id="cmbSymbols" class="navbar-nav mr-auto">
+			<select id="cmbSymbols" class="navbar-nav mr-auto">
                 <option value="IBM"> IBM </option>
                 <option value="MSFT"> Microsoft </option>
                 <option value="SNE"> Sony </option>
                 <option value="BABA"> Alibaba </option>
                 <option value="XIACF"> Xiaomi  </option>
             </select>
-			
-            <select class="form-inline my-2 my-lg-0" id="cmbRank" class="navbar-nav mr-auto"></select>
+            <select id="cmbRank" class="navbar-nav mr-auto"></select>
+            <form class="form-inline my-2 my-lg-0">
+                <input id="txtCerca" class="form-control mr-sm-2" type="search" placeholder="Nome azienda" aria-label="Search">
+            </form>
+			<a id="btnDownload" download="grafico.jpg" href="" class="btn btn-primary float-left bg-flat-color-1"><i class="fa fa-download"></i></a>	
         </div>
     </nav>
     <div id="wrapper">
         <table id="table" class="table"></table>
     </div>
-    <div id="grafico" class="container" style="width:800px;"></div>
+    <div id="grafico" class="container" style="width:800px;background-color:rgba(255,255,255,0.5);"></div>		
 </body>
 </html>
