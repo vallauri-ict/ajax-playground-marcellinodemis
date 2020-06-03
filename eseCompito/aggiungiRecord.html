@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Aggiungi</title>
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"> </script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script src="libreria.js"></script>
+		<script src="aggiungiRecord.js"></script>
+	</head>
+	<body style="background-image: url('img/background.jpg');", "background-repeat: no-repeat;">
+		<nav class="navbar navbar-expand-sm bg-dark" id="navbar">
+			<div class="container-fluid">
+				<ul class="navbar-nav">
+					<span class="input-group-text bg-dark"> 
+						<a href="index.html">Home</a>
+					</span>
+					<span class="input-group-text bg-dark"> 
+						<a href="modificaRecord.html">Modifica</a>
+					</span>
+					<span class="input-group-text bg-dark"> 
+						<a href="aggiungiRecord.html">Aggiungi</a>
+					</span>
+				</ul>
+			</div>
+		</nav>
+		<br>
+		<div class="container-fluid" id="wrapper">
+			<h2 style="text-align:center;">Aggiungi</h2>
+			<br>
+			<div class="row">
+					<table class="table table-striped table-bordered" id="tSushi" style="background-color: white;">
+						<thead>
+							<tr>
+								<th>Id</th>
+								<th>Nome</th>
+								<th>Tipologia</th>
+								<th>Pesce</th>
+								<th>Verdura</th>
+								<th>Salsa</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="text" placeholder="id del sushi" value="" id="sId"></td>
+								<td><input type="text" placeholder="nome del sushi" value="" id="sNome"></td>
+								<td><input type="text" placeholder="tipologia del sushi" value="" id="sTipologia"></td>
+								<td><input type="text" placeholder="tipologia di pesce" value="" id="sPesce"></td>
+								<td><input type="text" placeholder="tipologia di verdura" value="" id="sVerdura"></td>
+								<td><input type="text" placeholder="tipologia di salsa" value="" id="sSalsa"></td>
+							</tr>
+						</tbody>
+					</table>
+					<button type="button" class="btn btn-success" id="aggiungiSushi">Aggiungi</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
